@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+#app {
+    text-align: center;
+}
+
+#player {
+    border: 2px solid grey;
+    width: 500px;
+    height: 250px;
+    float: left;
+    margin: 15px;
+}
+#boss {
+    float: right;
+    border: 2px solid greenyellow;
+    width: 500px;
+    height: 250px;
+    margin: 15px;
+}
