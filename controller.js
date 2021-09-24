@@ -9,13 +9,14 @@ function playerAttack (attackpoints) {
 }
 
 function bossAttack() {
-    if (model.boss.superSmash.health <0) {
-        let randomBossAttackIndex = math.floor(math.random() *
+    if (model.boss.superSmash.health > 0) {
+        let randomBossAttackIndex = Math.floor(Math.random() *
             model.boss.superSmash.attacks.attackNames.length);
 
         model.attackMovePower = model.boss.superSmash.attacks.power[randomBossAttackIndex];
-        // model.attack = model.boss.superSmash.attacks.attackNames[randomBossAttackIndex];
+        model.attack = model.boss.superSmash.attacks.attackNames[randomBossAttackIndex];
 
+        model.player.superSmash.health -= model.attackMovePower;
         // if (model.attack === "")
     }
 

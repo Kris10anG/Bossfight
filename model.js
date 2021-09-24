@@ -5,10 +5,10 @@ const model = {
         superSmash: {
             name: "mario",
             health: 100,
-            Image: function() { return this.health > 0? "mario.gif" : "luigiwon.gif"},
+            image: function() { return this.health > 0? "mario.gif" : "luigiwon.gif"},
             attacks: {
                 attackNames: ["fireball", "cape", "super jump punch", "final smash"],
-                power: [20, 0, 30, 50],
+                power: [20, 10, 30, 50],
             }
         }
     },
